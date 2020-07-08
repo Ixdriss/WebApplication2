@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>log in</title>
+    <link rel="stylesheet" href="/static/master.css">
+</head>
+<body>
+    <div class="login-box">
+        <img src="imagenes/logIn/logo.png" class="avatar" alt="Avatar Image">
+        <h1>Login Here</h1>
+        <form mmethod="post" action="/Home/DirigirProducto">
+            <!-- USERNAME INPUT -->
+            <label for="username">Username</label>
+            <input type="text" placeholder="Enter Username" name="username">
+            <!-- PASSWORD INPUT -->
+            <label for="password">Password</label>
+            <input type="password" placeholder="Enter Password" name="password">
+            <input type="submit" value="Log In">
+            <a href="/Home/Alta">Don't have An account?</a>
+        </form>
+    </div>
+</body>
+</html>
+
